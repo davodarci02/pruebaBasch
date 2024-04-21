@@ -1,0 +1,213 @@
+body{
+    background-color: white;
+}
+
+nav {
+    display: flex;
+    background-color:     #2c3e50; /* Color de fondo de la barra de navegación */
+    padding: 10px; /* Espacio interno alrededor de la barra */
+    border-radius: 6px;
+}
+/* Estilo para los enlaces de la barra de navegación */
+nav a {
+    color:  #abb2b9 ; /* Color del texto de los enlaces */
+    text-decoration: none; /* Eliminar subrayado en los enlaces */
+    padding: 16px; /* Espacio interno alrededor de cada enlace */
+    display: inline-block; /* Los enlaces se comportan como bloques en línea */
+}
+
+/* Estilo para los enlaces al pasar el ratón por encima */
+nav a:hover {
+    background-color:   #808b96 ; /* Cambiar color de fondo al pasar el ratón */
+    border-radius: 6px;
+    color: black;
+}
+
+/* Estilo para organizar los elementos en la barra de navegación */
+nav ul {
+    list-style-type: none; /* Eliminar viñetas de la lista */
+    margin: 0; /* Eliminar márgenes */
+    padding: 0; /* Eliminar relleno */
+    display: flex; /* Los elementos se distribuyen en fila */
+}
+
+/* Estilo para los elementos de la lista */
+nav ul li {
+    margin-right: 25px; /* Espacio entre los elementos de la lista */
+    display: flex;
+    margin-left: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;   
+}
+img {
+    width: 50px; /* Ancho de la imagen */
+    height: 50px; /* Altura de la imagen */
+    margin-right: 10px; /* Espacio a la derecha de la imagen */
+    border-radius: 3px;
+}
+
+#marca{
+    margin-left: 10px;
+}
+nav input {
+    margin-left: auto;
+    border-radius: 6px;
+    display: inline-block;
+    margin-top: 10px; /* Baja el input con respecto a nav */
+} 
+input {
+    box-sizing: border-box;
+    width: 20%; /* Ancho del input */
+    height: 30px; /* Altura del input */
+}
+button{
+    box-sizing: border-box;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 60px;
+    height: 30px;
+}
+nav input {
+    margin-right: 7px;
+}
+#buscar{
+    border-radius: 6px;
+}
+footer {
+    
+    background-color: white; /* Color de fondo */
+    padding: 10px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
+    position: fixed; /* Fijar el pie de página */
+    bottom: 0; /* Ubicarlo en la parte inferior de la página */
+    width: 83.1em; /*Que ocupe todo el ancho de la página */
+    border-radius: 6px;
+    border-color: #F2F4F4;
+    /* height: 9%;
+    line-height: 7px; */
+}
+/* @media (max-width: 768px){ */
+
+@media (max-width: 768px) {
+    nav ul {
+    flex-direction: column;
+    align-items: center;
+    }
+
+    nav ul li {
+    margin-bottom: 5px;
+    }
+
+    main {
+    padding: 5px;
+    }
+    input{
+        margin-bottom: 5px;
+    }
+    button{
+        margin-bottom: 5px;
+    }
+   
+}
+.container {
+    display: flex; /* Activar Flexbox */
+    justify-content: space-between; /* Separar las secciones */
+    padding: 10px; /* Espaciado interno */
+    border: 0px solid #ccc; /*Borde para distinguir el container */
+    height: 445px;
+    border-radius: 6px;
+    background-color: white;
+}
+.section {
+    flex: 1; /* Cada sección ocupa la mitad del container */
+    padding: 150px;
+    border: 0px  groove  #ccc; /*Borde para distinguir cada sección*/
+    margin: 5px;
+    text-align: center;
+    border-radius: 6px;
+    margin-right: 1px;
+    background-color: white;
+    position: relative;
+    
+    
+}
+
+@keyframes moverDeIzquierdaADerecha {
+    0% {
+        transform: translateX(-100px);
+    }
+    100% {
+        transform: translateX(100px);
+    }
+}
+#logo{
+    /* filter: grayscale(100%); Convierte la imagen a escala de grises */
+    animation: moverDeIzquierdaADerecha 5s linear infinite;
+    /* transform: scale(1.2); Escala la imagen cuando se pasa el mouse por encima */
+    /* transition: all 2s; Añade una transición de 2 segundos a todos los cambios */
+    width: 200px;
+    height: 200px;
+    margin-top: -15px;
+    /* clip-path: circle(50% at center); Recorta la imagen en un círculo */
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+#icousua{
+    position: relative;
+    left: 50px;
+    width: 150px;
+    height: 150px;
+    margin-top: -100px;
+    margin-left: 200px;
+    
+}
+h1{
+    margin-top: -100px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2c3e50;
+    text-shadow: 2px 2px 4px gray;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2c3e50;
+}
+#inputusu{
+    box-sizing: border-box;
+    position: absolute;
+    left: 70px;
+    top: 80px;
+    width: 40%; /* Ancho del input */
+    height: 30px; /* Altura del input */
+    border-radius: 6px;
+    /* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); */
+    margin-right: 400px;
+    margin-bottom: -100px;
+    border: 3px solid #2c3e50;
+}
+#inputpassw{
+    box-sizing: border-box;
+    position: absolute;
+    width: 40%; /* Ancho del input */
+    height: 30px; /* Altura del input */
+    border-radius: 6px;
+    left: 70px;
+    top: 130px;
+    border: 3px solid #2c3e50;
+    /* margin-left: -100px; */
+}
+#ingresar{
+    position: absolute;
+    top: 170px;
+    left: 25%;
+    width: 10%;
+    box-sizing: border-box;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    
+}
+#registro{
+    width: 30%;
+    border-radius: 6px;
+}
+
+
